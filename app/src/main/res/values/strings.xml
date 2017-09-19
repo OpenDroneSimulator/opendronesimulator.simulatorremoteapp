@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Drone Simulator Remote</string>
+    <string name="welcomeSentence">Type in the host and \n port of your computer \n or search for the simulator \n in the local network</string>
+    <string name="hint_host">Host</string>
+    <string name="hit_port">Port</string>
+    <string name="connectButtonLabel">Connect</string>
+    <string name="button_search">Broadcast Search</string>
+    <string name="remoteTitle">IP COULDNT BE FETCHED</string>
+    <string name="remote_tv_xpos">xpos</string>
+    <string name="remote_tv_power">power</string>
+    <string name="remote_tv_angle">angle</string>
+    <string name="remote_tv_ypos">ypos</string>
+    <string name="doneKeyboardButtonLabel">Done</string>
+
+    <string-array name="Planets">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_remote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.reiss.yanneck.quadcopterremote.com.drnsmltr.quadrocopterremote.activities.RemoteActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_mainKnobLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knobmain01"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignTop="@+id/imageView_mainKnobRight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/imageView_topKnobLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knobtop01"
+        android:tintMode="src_over"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignTop="@+id/imageView_topKnobRight"
+        android:layout_alignLeft="@+id/imageView_mainKnobLeft"
+        android:layout_alignStart="@+id/imageView_mainKnobLeft"/>
+
+    <ImageView
+        android:id="@+id/imageView_mainKnobRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knobmain01"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"/>
+
+    <ImageView
+        android:id="@+id/imageView_topKnobRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knobtop01"
+        android:tintMode="src_over"
+        android:layout_alignTop="@+id/imageView_mainKnobRight"
+        android:layout_alignLeft="@+id/imageView_mainKnobRight"
+        android:layout_alignStart="@+id/imageView_mainKnobRight"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"/>
+
+
+    <TextView
+        android:id="@+id/remote_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remoteTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/remote_xpos"
+        android:text="@string/remote_tv_xpos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/remote_title_textView"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/remote_ypos"
+        android:text="@string/remote_tv_ypos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remote_xpos"
+        android:layout_alignLeft="@+id/remote_xpos"
+        android:layout_alignStart="@+id/remote_xpos"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/remote_power"
+        android:text="@string/remote_tv_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/remote_ypos"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/remote_angle"
+        android:text="@string/remote_tv_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/remote_power"
+        android:layout_alignStart="@+id/remote_power"/>
+
+    <Button
+        android:id="@+id/ledStatusButton"
+        android:text="LED Status"
+        android:onClick="checkLEDStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView_mainKnobRight"
+        android:layout_alignEnd="@+id/imageView_mainKnobRight"/>
+
+    <TextView
+        android:id="@+id/ledStatusTextView"
+        android:text="LED deaktiviert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remote_xpos"
+        android:layout_alignRight="@+id/ledStatusButton"
+        android:layout_alignEnd="@+id/ledStatusButton"/>
+
+
+</RelativeLayout>

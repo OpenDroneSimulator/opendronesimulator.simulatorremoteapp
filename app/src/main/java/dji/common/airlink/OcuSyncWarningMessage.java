@@ -1,0 +1,17 @@
+package dji.common.airlink;
+
+/**
+ *
+ */
+
+public enum OcuSyncWarningMessage
+{
+    AIRCRAFT_LINK_REBOOT,
+    DOWN_LINK_BROKEN,
+    LINK_UNUSABLE,
+    STRONG_DOWN_LINK_INTERFERENCE,
+    STRONG_TAKE_OFF_INTERFERENCE,
+    STRONG_UP_LINK_INTERFERENCE,
+    UP_LINK_BROKEN,
+    WEAK_SIGNAL
+}
